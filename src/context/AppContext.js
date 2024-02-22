@@ -112,11 +112,11 @@ export const AppProvider = (props) => {
                 expenses: state.expenses,
                 budget: state.budget,
                 remaining: remaining,
-                dispatch,
-                currency: state.currency
+                currency: state.currency,
+                dispatch
             }}
         >
-            {props.children}
+        {props.children}
         </AppContext.Provider>
     );
 };
